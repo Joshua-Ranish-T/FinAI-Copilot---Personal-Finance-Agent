@@ -1,0 +1,288 @@
+/* Login Container */
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  background: linear-gradient(135deg, var(--primary-light) 0%, var(--secondary-light) 100%);
+}
+
+/* Login Card */
+.login-card {
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: var(--card-bg);
+}
+
+/* Login Content */
+.login-content {
+  padding: 40px;
+}
+
+/* Login Header */
+.login-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+/* App Logo */
+.app-logo {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 20px;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-icon {
+  color: white;
+  width: 28px;
+  height: 28px;
+}
+
+/* Login Title and Subtitle */
+.login-title {
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--text-primary);
+}
+
+.login-subtitle {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+/* Error Alert */
+.error-alert {
+  margin-bottom: 20px;
+}
+
+/* Login Form */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Form Field */
+.form-field {
+  width: 100%;
+}
+
+/* Input Icon */
+.input-icon {
+  margin-right: 8px;
+  color: var(--text-secondary);
+}
+
+/* Remember Me */
+.remember-me {
+  margin-top: 8px;
+}
+
+/* Forgot Password */
+.forgot-password {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 4px;
+}
+
+.forgot-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
+/* Submit Button */
+.submit-button {
+  background-color: var(--primary-color);
+  color: white;
+  text-transform: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-weight: 600;
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.submit-button:hover {
+  background-color: var(--primary-dark);
+}
+
+.submit-button:disabled {
+  background-color: var(--disabled-bg);
+  color: var(--text-secondary);
+  cursor: not-allowed;
+}
+
+.submit-icon {
+  margin-left: 4px;
+}
+
+/* Toggle Form */
+.toggle-form {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.toggle-text {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.toggle-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.toggle-link:hover {
+  text-decoration: underline;
+}
+
+/* Divider */
+.divider-container {
+  display: flex;
+  align-items: center;
+  margin: 32px 0;
+}
+
+.divider {
+  flex: 1;
+  background-color: var(--border-color);
+}
+
+.divider-text {
+  padding: 0 16px;
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+/* Social Login */
+.social-login {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.social-button {
+  border-radius: 8px;
+  padding: 12px;
+  text-transform: none;
+  border: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.social-button:hover {
+  background-color: var(--hover-bg);
+  border-color: var(--primary-color);
+}
+
+.social-icon {
+  margin-right: 4px;
+}
+
+.social-button.facebook:hover {
+  color: #1877f2;
+  border-color: #1877f2;
+}
+
+.social-button.twitter:hover {
+  color: #1da1f2;
+  border-color: #1da1f2;
+}
+
+.social-button.github:hover {
+  color: #333;
+  border-color: #333;
+}
+
+/* Terms and Privacy */
+.terms-privacy {
+  margin-top: 24px;
+}
+
+.terms-text {
+  color: var(--text-secondary);
+  font-size: 12px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.terms-link {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.terms-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .login-content {
+    padding: 24px;
+  }
+  
+  .app-logo {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 16px;
+  }
+  
+  .logo-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .login-title {
+    font-size: 20px;
+  }
+  
+  .login-subtitle {
+    font-size: 13px;
+  }
+  
+  .social-login {
+    gap: 10px;
+  }
+  
+  .social-button {
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  .terms-text {
+    font-size: 11px;
+  }
+}
+
+/* Dark Mode Adjustments */
+[data-theme="dark"] {
+  --card-bg: #1e2022;
+  --hover-bg: #2d2f32;
+  --border-color: #3a3c40;
+  --text-primary: #e0e0e0;
+  --text-secondary: #a0a0a0;
+  --primary-light: rgba(76, 175, 80, 0.15);
+  --secondary-light: rgba(33, 150, 243, 0.15);
+  --disabled-bg: #3a3c40;
+}

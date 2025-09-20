@@ -1,0 +1,820 @@
+/* Settings Container */
+.settings-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Page Header */
+.page-header {
+  margin-bottom: 30px;
+}
+
+.page-title {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.page-subtitle {
+  color: var(--text-secondary);
+}
+
+/* Settings Content */
+.settings-content {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Tabs */
+.settings-tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 240px;
+  flex-shrink: 0;
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  height: fit-content;
+}
+
+.tab-button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border: none;
+  background-color: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: var(--text-secondary);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.tab-button:hover {
+  background-color: var(--hover-bg);
+  color: var(--primary-color);
+}
+
+.tab-button.active {
+  background-color: var(--primary-light);
+  color: var(--primary-color);
+}
+
+.tab-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Tab Content Wrapper */
+.tab-content-wrapper {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Tab Content Common Styles */
+.tab-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Card Styles */
+.card {
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.card-content {
+  padding: 20px;
+}
+
+/* Section Title and Description */
+.section-title {
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.section-description {
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+}
+
+/* Divider */
+.divider {
+  margin: 16px 0;
+  background-color: var(--border-color);
+}
+
+/* Form Styles */
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-field {
+  width: 100%;
+}
+
+.form-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+/* Button Styles */
+.button {
+  text-transform: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-weight: 500;
+}
+
+.save-button, .connect-button, .change-password-button, .setup-button {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.save-button:hover, .connect-button:hover, .change-password-button:hover, .setup-button:hover {
+  background-color: var(--primary-dark);
+}
+
+.add-account-button, .add-rule-button {
+  background-color: var(--primary-color);
+  color: white;
+  text-transform: none;
+}
+
+.add-account-button:hover, .add-rule-button:hover {
+  background-color: var(--primary-dark);
+}
+
+.action-button, .session-button, .rule-action-button {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.action-button:hover, .session-button:hover, .rule-action-button:hover {
+  background-color: var(--primary-light);
+  border-color: var(--primary-dark);
+}
+
+.action-button.danger, .session-button.danger, .delete-button.danger, .rule-action-button.danger, .confirm-delete-button.danger {
+  color: var(--error-color);
+  border-color: var(--error-color);
+}
+
+.action-button.danger:hover, .session-button.danger:hover, .delete-button.danger:hover, .rule-action-button.danger:hover, .confirm-delete-button.danger:hover {
+  background-color: var(--error-light);
+  border-color: var(--error-dark);
+}
+
+.logout-button {
+  color: var(--text-primary);
+  border-color: var(--border-color);
+}
+
+.logout-button:hover {
+  background-color: var(--hover-bg);
+}
+
+/* Profile Tab */
+.profile-card {
+  margin-bottom: 20px;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.profile-avatar {
+  width: 64px;
+  height: 64px;
+  background-color: var(--primary-color);
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.profile-name {
+  font-weight: 600;
+}
+
+.profile-email {
+  color: var(--text-secondary);
+}
+
+.profile-form {
+  margin-top: 16px;
+}
+
+/* Accounts Tab */
+.tab-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.tab-title {
+  font-weight: 600;
+}
+
+.add-account-card {
+  margin-bottom: 20px;
+}
+
+.form-title {
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.accounts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.account-card {
+  transition: transform 0.2s ease;
+}
+
+.account-card:hover {
+  transform: translateY(-2px);
+}
+
+.account-content {
+  padding: 16px;
+}
+
+.account-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.account-icon-section {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: var(--primary-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.account-icon {
+  color: var(--primary-color);
+  width: 20px;
+  height: 20px;
+}
+
+.account-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.account-name {
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.account-type {
+  color: var(--text-secondary);
+}
+
+.account-status {
+  margin-left: auto;
+}
+
+.status-badge {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.status-badge.active {
+  background-color: var(--success-light);
+  color: var(--success-color);
+}
+
+.status-badge.inactive {
+  background-color: var(--disabled-bg);
+  color: var(--text-secondary);
+}
+
+.status-badge.pending {
+  background-color: var(--warning-light);
+  color: var(--warning-color);
+}
+
+.account-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  padding: 12px 0;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.balance-section {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.balance-label {
+  color: var(--text-secondary);
+  font-size: 12px;
+}
+
+.balance-amount {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.balance-amount.positive {
+  color: var(--success-color);
+}
+
+.balance-amount.negative {
+  color: var(--error-color);
+}
+
+.last-updated {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-secondary);
+}
+
+.update-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.update-text {
+  font-size: 12px;
+}
+
+.account-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+/* Notifications Tab */
+.notification-settings-card {
+  margin-bottom: 20px;
+}
+
+.notification-options {
+  margin-bottom: 16px;
+}
+
+.all-notifications-toggle {
+  margin-bottom: 8px;
+}
+
+.notification-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.notification-item {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.notification-item:last-child {
+  border-bottom: none;
+}
+
+.notification-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.notification-type {
+  font-weight: 500;
+}
+
+.notification-frequency {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.frequency-label {
+  color: var(--text-secondary);
+  font-size: 12px;
+  min-width: 60px;
+}
+
+.frequency-select {
+  width: 150px;
+}
+
+/* Security Tab */
+.password-card, .two-factor-card, .account-access-card, .delete-account-card {
+  margin-bottom: 20px;
+}
+
+.password-form {
+  margin-top: 16px;
+}
+
+.success-alert {
+  margin-bottom: 16px;
+}
+
+.two-factor-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+}
+
+.status-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.status-title {
+  font-weight: 500;
+}
+
+.status-description {
+  color: var(--text-secondary);
+}
+
+.setup-icon {
+  margin-left: 4px;
+}
+
+.session-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.session-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: var(--hover-bg);
+}
+
+.session-item.active {
+  background-color: var(--primary-light);
+}
+
+.session-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+  min-width: 0;
+}
+
+.session-device {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.device-name {
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.device-details {
+  color: var(--text-secondary);
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.session-time {
+  color: var(--text-secondary);
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.delete-warning {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 12px;
+  background-color: var(--warning-light);
+  border-radius: 8px;
+  margin: 16px 0;
+}
+
+.warning-icon {
+  color: var(--warning-color);
+  margin-top: 2px;
+}
+
+.warning-text {
+  color: var(--warning-color);
+  flex: 1;
+}
+
+.delete-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Dialog Styles */
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.delete-dialog {
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.24);
+  overflow: hidden;
+}
+
+.dialog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.dialog-title {
+  font-weight: 600;
+}
+
+.close-button {
+  color: var(--text-secondary);
+}
+
+.close-button:hover {
+  background-color: var(--hover-bg);
+}
+
+.dialog-content {
+  padding: 20px;
+}
+
+.dialog-warning {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
+  padding: 16px;
+  background-color: var(--warning-light);
+  border-radius: 8px;
+}
+
+.dialog-warning-icon {
+  color: var(--warning-color);
+  margin-top: 2px;
+}
+
+.dialog-warning-text {
+  color: var(--warning-color);
+  flex: 1;
+  font-weight: 500;
+}
+
+.dialog-notes {
+  margin-bottom: 20px;
+}
+
+.dialog-note {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  color: var(--text-secondary);
+}
+
+.confirmation-field {
+  margin-bottom: 16px;
+}
+
+.dialog-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding: 0 20px 20px;
+}
+
+/* Categories Tab */
+.category-rules-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.category-rule-card {
+  transition: transform 0.2s ease;
+}
+
+.category-rule-card:hover {
+  transform: translateY(-2px);
+}
+
+.category-rule-content {
+  padding: 16px;
+}
+
+.rule-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.rule-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.rule-pattern {
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.rule-category {
+  color: var(--text-secondary);
+  font-size: 12px;
+}
+
+.rule-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+/* Preferences Tab */
+.theme-card, .language-card, .logout-card {
+  margin-bottom: 20px;
+}
+
+.theme-options {
+  padding: 16px 0;
+}
+
+.language-options {
+  padding: 8px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 960px) {
+  .settings-content {
+    flex-direction: column;
+  }
+  
+  .settings-tabs {
+    width: 100%;
+    flex-direction: row;
+    overflow-x: auto;
+    padding: 8px;
+    gap: 4px;
+  }
+  
+  .tab-button {
+    flex-shrink: 0;
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+  
+  .tab-icon {
+    display: none;
+  }
+  
+  .account-details {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    text-align: left;
+  }
+  
+  .balance-amount {
+    font-size: 16px;
+  }
+  
+  .two-factor-status {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  
+  .session-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .settings-container {
+    padding: 12px;
+  }
+  
+  .page-title {
+    font-size: 24px;
+  }
+  
+  .card-content {
+    padding: 16px;
+  }
+  
+  .form-actions {
+    flex-direction: column;
+  }
+  
+  .dialog-actions {
+    flex-direction: column;
+  }
+  
+  .account-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .account-status {
+    margin-left: 0;
+  }
+  
+  .notification-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .notification-frequency {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .frequency-select {
+    width: 100%;
+  }
+}
+
+/* Dark Mode Adjustments */
+[data-theme="dark"] {
+  --card-bg: #1e2022;
+  --hover-bg: #2d2f32;
+  --border-color: #3a3c40;
+  --text-primary: #e0e0e0;
+  --text-secondary: #a0a0a0;
+  --primary-light: rgba(76, 175, 80, 0.15);
+  --success-light: rgba(76, 175, 80, 0.15);
+  --warning-light: rgba(255, 193, 7, 0.15);
+  --error-light: rgba(244, 67, 54, 0.15);
+  --disabled-bg: #3a3c40;
+}

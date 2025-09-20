@@ -1,0 +1,361 @@
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  height: 64px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+/* Dark mode styles */
+.app-container.dark .navbar {
+  background-color: #1e1e1e;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Navbar left section */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Sidebar toggle button */
+.sidebar-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #333;
+}
+
+.app-container.dark .sidebar-toggle {
+  color: #e0e0e0;
+}
+
+.sidebar-toggle:hover {
+  background-color: #f0f0f0;
+}
+
+.app-container.dark .sidebar-toggle:hover {
+  background-color: #2d2d2d;
+}
+
+/* Logo */
+.logo h1 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #0070f3;
+}
+
+/* Navbar center section */
+.navbar-center {
+  flex: 1;
+  max-width: 400px;
+  margin: 0 20px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  background-color: #f5f5f7;
+  border-radius: 8px;
+  padding: 0 16px;
+  transition: all 0.3s ease;
+}
+
+.app-container.dark .search-container {
+  background-color: #2d2d2d;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.app-container.dark .search-input {
+  color: #e0e0e0;
+}
+
+.search-input::placeholder {
+  color: #999;
+}
+
+.app-container.dark .search-input::placeholder {
+  color: #666;
+}
+
+.search-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  color: #666;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.app-container.dark .search-button {
+  color: #999;
+}
+
+.search-button:hover {
+  color: #0070f3;
+}
+
+/* Navbar right section */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Theme toggle button */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #333;
+}
+
+.app-container.dark .theme-toggle {
+  color: #e0e0e0;
+}
+
+.theme-toggle:hover {
+  background-color: #f0f0f0;
+}
+
+.app-container.dark .theme-toggle:hover {
+  background-color: #2d2d2d;
+}
+
+/* Notifications */
+.notifications {
+  position: relative;
+}
+
+.notification-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #333;
+}
+
+.app-container.dark .notification-button {
+  color: #e0e0e0;
+}
+
+.notification-button:hover {
+  background-color: #f0f0f0;
+}
+
+.app-container.dark .notification-button:hover {
+  background-color: #2d2d2d;
+}
+
+.notification-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  background-color: #dc3545;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 50%;
+}
+
+/* User profile */
+.user-profile {
+  position: relative;
+}
+
+.user-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.app-container.dark .user-avatar {
+  background-color: #2d2d2d;
+}
+
+.user-avatar img,
+.user-avatar-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+
+.avatar-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-weight: 600;
+  color: #666;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  font-size: 16px;
+}
+
+.app-container.dark .avatar-placeholder {
+  background-color: #2d2d2d;
+  color: #999;
+}
+
+.user-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 8px;
+  width: 200px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 8px 0;
+  z-index: 1001;
+  transition: all 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-8px);
+}
+
+.app-container.dark .user-dropdown {
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.user-profile:hover .user-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.user-info {
+  padding: 12px 16px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.app-container.dark .user-info {
+  border-bottom-color: #2d2d2d;
+}
+
+.user-name {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.app-container.dark .user-name {
+  color: #e0e0e0;
+}
+
+.user-email {
+  font-size: 14px;
+  color: #666;
+}
+
+.app-container.dark .user-email {
+  color: #999;
+}
+
+.logout-button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 12px 16px;
+  border: none;
+  background-color: transparent;
+  color: #dc3545;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+.app-container.dark .logout-button {
+  color: #ff6b6b;
+}
+
+.logout-button:hover {
+  background-color: #f8f9fa;
+}
+
+.app-container.dark .logout-button:hover {
+  background-color: #2d2d2d;
+}
+
+.logout-button i {
+  margin-right: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 12px;
+  }
+  
+  .navbar-center {
+    display: none;
+  }
+  
+  .logo h1 {
+    font-size: 18px;
+  }
+}

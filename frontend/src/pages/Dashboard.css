@@ -1,0 +1,399 @@
+/* Dashboard Styles */
+.dashboard-container {
+  padding: 20px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Dashboard Header */
+.dashboard-header {
+  margin-bottom: 32px;
+}
+
+.dashboard-title {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.dashboard-subtitle {
+  color: #666;
+}
+
+.app-container.dark .dashboard-subtitle {
+  color: #999;
+}
+
+/* Loading Container */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 100%;
+  font-size: 18px;
+  color: #666;
+}
+
+.app-container.dark .loading-container {
+  color: #999;
+}
+
+/* Balances Section */
+.balances-section {
+  margin-bottom: 32px;
+}
+
+.balance-card {
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.app-container.light .balance-card {
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.app-container.dark .balance-card {
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.total-balance-card .balance-amount {
+  color: #0070f3;
+}
+
+.balance-label {
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #666;
+}
+
+.app-container.dark .balance-label {
+  color: #999;
+}
+
+.balance-amount {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.balance-amount.negative {
+  color: #dc3545;
+}
+
+.balance-change {
+  margin-top: 8px;
+}
+
+/* Charts Section */
+.charts-section {
+  margin-bottom: 32px;
+}
+
+.chart-card {
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.app-container.light .chart-card {
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.app-container.dark .chart-card {
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.chart-title {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.chart-container {
+  height: 300px;
+}
+
+/* Transactions Section */
+.transactions-section {
+  margin-bottom: 32px;
+}
+
+.transactions-card {
+  transition: all 0.3s ease;
+}
+
+.app-container.light .transactions-card {
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.app-container.dark .transactions-card {
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.section-header h2 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.view-all-link {
+  color: #0070f3;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.view-all-link:hover {
+  color: #0051cc;
+}
+
+.app-container.dark .view-all-link {
+  color: #40a9ff;
+}
+
+.app-container.dark .view-all-link:hover {
+  color: #1890ff;
+}
+
+.transactions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.transaction-item {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.transaction-item:hover {
+  background-color: #f5f5f7;
+}
+
+.app-container.dark .transaction-item:hover {
+  background-color: #2d2d2d;
+}
+
+.transaction-icon {
+  margin-right: 16px;
+}
+
+.icon-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 16px;
+  color: white;
+}
+
+.icon-circle.credit {
+  background-color: #28a745;
+}
+
+.icon-circle.debit {
+  background-color: #dc3545;
+}
+
+.transaction-details {
+  flex: 1;
+}
+
+.transaction-merchant {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.transaction-meta {
+  display: flex;
+  gap: 16px;
+  font-size: 14px;
+  color: #666;
+}
+
+.app-container.dark .transaction-meta {
+  color: #999;
+}
+
+.transaction-amount {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.transaction-amount.credit {
+  color: #28a745;
+}
+
+.transaction-amount.debit {
+  color: #dc3545;
+}
+
+/* Insights Section */
+.insights-section {
+  margin-bottom: 32px;
+}
+
+.insights-card {
+  transition: all 0.3s ease;
+}
+
+.app-container.light .insights-card {
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.app-container.dark .insights-card {
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.section-title {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.insights-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.insight-item {
+  display: flex;
+  align-items: flex-start;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  transition: all 0.3s ease;
+}
+
+.app-container.dark .insight-item {
+  background-color: #2d2d2d;
+}
+
+.insight-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.app-container.dark .insight-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.insight-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  background-color: #e6f7ff;
+  color: #0070f3;
+  font-size: 20px;
+  margin-right: 16px;
+  flex-shrink: 0;
+}
+
+.app-container.dark .insight-icon {
+  background-color: rgba(0, 112, 243, 0.1);
+  color: #40a9ff;
+}
+
+.insight-content {
+  flex: 1;
+}
+
+.insight-title {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.insight-description {
+  font-size: 14px;
+  color: #666;
+}
+
+.app-container.dark .insight-description {
+  color: #999;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 16px;
+  }
+  
+  .dashboard-header {
+    margin-bottom: 24px;
+  }
+  
+  .dashboard-title {
+    font-size: 24px;
+  }
+  
+  .balances-section,
+  .charts-section,
+  .transactions-section,
+  .insights-section {
+    margin-bottom: 24px;
+  }
+  
+  .chart-container {
+    height: 250px;
+  }
+  
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .transaction-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  
+  .transaction-meta {
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .insight-item {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .insight-icon {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-container {
+    padding: 12px;
+  }
+  
+  .dashboard-title {
+    font-size: 20px;
+  }
+  
+  .chart-container {
+    height: 200px;
+  }
+}
